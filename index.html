@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi México di Oro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="my-5">Bandera de México</h1>
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <!-- Color Verde -->
+                <div class="color-box" id="greenBox"></div>
+                <h5 class="mt-3">Esperanza</h5>
+                <input type="range" class="custom-range mb-3" min="0" max="255" id="greenSlider">
+                <p id="greenHex" class="mt-2">#009900</p>
+            </div>
+
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <!-- Color Blanco (Unidad) -->
+                <div class="color-box" id="whiteBox">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo" class="img-fluid centered-image">
+                </div>
+                <h5 class="mt-3">Unidad</h5>
+                <p id="whiteHex" class="mt-2">#FFFFFF</p>
+            </div>
+
+            <div class="col-md-3 d-flex flex-column align-items-center">
+                <!-- Color Rojo -->
+                <div class="color-box" id="redBox"></div>
+                <h5 class="mt-3">Sangre de nuestros héroes nacionales</h5>
+                <input type="range" class="custom-range mb-3" min="0" max="255" id="redSlider">
+                <p id="redHex" class="mt-2">#9D0000</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen en la esquina inferior derecha -->
+    <img src="https://pbs.twimg.com/media/GHxI_4_WYAAyRk4?format=png&name=small" alt="Imagen en la esquina" class="bottom-right-img">
+
+    <script src="script.js"></script>
+</body>
+</html>
